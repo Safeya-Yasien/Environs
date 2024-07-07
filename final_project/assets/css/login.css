@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.main-container {
+  position: absolute;
+  width: 400px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgb(0, 0, 0);
+}
+.main-container .sub-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.main-container h1 {
+  font-size: 2em;
+  color: #149954;
+  text-transform: uppercase;
+}
+
+.login {
+  background: #222;
+}
+.login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.login form .form-group {
+  position: relative;
+  width: 100%;
+}
+.login form .form-group input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1em;
+}
+.login form .form-group input:focus + span, .login form .form-group input:active + span {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #ffffff;
+}
+.login form .form-group span {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.4s;
+  pointer-events: none;
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login .links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.login .links a:nth-child(2) {
+  color: #149954;
+  font-weight: 600;
+}
+.login .submit {
+  width: 100%;
+}
+.login .submit input {
+  padding: 10px;
+  background: #149954;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login .submit input:active {
+  color: #ffffff;
+}/*# sourceMappingURL=login.css.map */

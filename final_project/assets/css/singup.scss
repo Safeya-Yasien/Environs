@@ -1,0 +1,68 @@
+@import "./auth";
+
+body {
+  background-color: #222;
+}
+.register {
+  background-color: $white-color;
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    input {
+      width: 100%;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #999;
+      padding: 6px 30px;
+      font-family: Poppins;
+      box-sizing: border-box;
+      transition: $main-transition;
+      font-family: inherit;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #222;
+      }
+      &:focus::placeholder {
+        color: $black-color;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+    }
+    input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+    label {
+      font-size: 14px;
+      a {
+        color: $black-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  .form-button .form-submit {
+    padding: 10px;
+    background: $auth-main-color;
+    color: $white-color;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .have-acount {
+    margin-top: -50px;
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      color: $auth-main-color;
+    }
+  }
+}
