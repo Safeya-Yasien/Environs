@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/dist/index.css" />
+    <link rel="stylesheet" href="assets/css/dist/about.css" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <title>Environs</title>
   </head>
   <body>
@@ -91,10 +91,10 @@
             <div class="navbar-links">
               <ul class="d-flex">
                 <li>
-                  <a href="#home" class="p-3 fw-bold navbar-link">Home</a>
+                  <a href="index.html" class="p-3 fw-bold navbar-link">Home</a>
                 </li>
                 <li>
-                  <a href="about.html" class="p-3 fw-bold navbar-link">About</a>
+                  <a href="#about" class="p-3 fw-bold navbar-link">About</a>
                 </li>
                 <li>
                   <a href="services.html" class="p-3 fw-bold navbar-link"
@@ -102,10 +102,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="contact.html"
-                    id="contact"
-                    class="p-3 fw-bold navbar-link"
+                  <a href="contact.html" id="contact" class="p-3 fw-bold navbar-link"
                     >Contact</a
                   >
                 </li>
@@ -120,32 +117,32 @@
         </div>
       </div>
     </header>
-    <main
-      id="home"
-      class="d-flex align-items-center justify-content-center text-center"
+    <div
+      class="d-flex align-items-center justify-content-center text-center hero-section"
     >
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="text position-relative">
-              <h4 class="text-uppercase sub-title mb-4">
-                we'll save our planet
-              </h4>
-              <h1 class="title mb-4">Protect Environment</h1>
+              <h1 class="title mb-4">About Us</h1>
               <p class="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
+                Help today because tomorrow you may be the one who needs more
+                helping!
               </p>
-              <div>
-                <a href="#" class="btn btn-dark fw-bold fs-5">Join With Us</a>
-              </div>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    About
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <section class="about" id="about">
+    </div>
+    <section class="about">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 col-xl-6">
@@ -180,29 +177,21 @@
             </div>
           </div>
         </div>
-        <div class="row flex-row-reverse">
-          <div class="col-12 col-xl-6">
-            <div class="image">
-              <img
-                src="assets/imgs/about.jpg"
-                alt="about"
-                loading="lazy"
-                class="w-100 rounded-2"
-              />
-            </div>
-          </div>
+      </div>
+    </section>
+
+    <section class="volunteer">
+      <div class="container">
+        <div class="row mb-5">
           <div class="col-12 col-xl-6">
             <div class="text p-4">
               <h3
                 class="title comman-title mb-5 fw-bold text-center position-relative mx-auto"
               >
-                About Us
+                Become a Volunteer?
               </h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                quas, incidunt veniam totam rem sint! Quae temporibus labore
-                eveniet aliquid ea beatae quisquam nisi! Placeat numquam cumque
-                quos delectus ullam!
+              <p class="fw-bold fs-5">
+                Join your hand with us for a better life and beautiful future.
               </p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -210,218 +199,85 @@
                 eveniet aliquid ea beatae quisquam nisi! Placeat numquam cumque
                 quos delectus ullam!
               </p>
+              <ul class="volunteer-list">
+                <li class="volunteer-item">
+                  <span>
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <span> We are friendly to each other. </span>
+                </li>
+                <li class="volunteer-item">
+                  <span>
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <span> We are friendly to each other. </span>
+                </li>
+                <li class="volunteer-item">
+                  <span>
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <span> We are friendly to each other. </span>
+                </li>
+                <li class="volunteer-item">
+                  <span>
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <span> We are friendly to each other. </span>
+                </li>
+              </ul>
+              <button type="button" class="btn volunteer-button">
+                Join With Us
+              </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="services" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3
-              class="title comman-title mb-5 fw-bold text-center position-relative mx-auto"
-            >
-              Services
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-3">
-            <div
-              class="icon text-center d-flex justify-content-center align-items-center"
-            >
-              <i class="fa-solid fa-gear"></i>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="icon text-center d-flex justify-content-center align-items-center"
-            >
-              <i class="fa-solid fa-phone"></i>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="icon text-center d-flex justify-content-center align-items-center"
-            >
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="icon text-center d-flex justify-content-center align-items-center"
-            >
-              <i class="fa-solid fa-headset"></i>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="latest-news" id="latest-news">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3
-              class="title comman-title mb-3 fw-bold text-center position-relative mx-auto"
-            >
-              Latest News
-            </h3>
-            <p class="text-center">
-              Help today because tomorrow you may be the one who needs more
-              helping!
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="new mt-5">
-              <div class="new-header position-relative">
-                <img
-                  src="assets/imgs/about.jpg"
-                  alt="new"
-                  loading="lazy"
-                  class="w-100"
-                />
-                <div
-                  class="info d-flex align-items-center justify-content-between"
-                >
-                  <div class="date">
-                    <p>
-                      <span class="me-1">
-                        <i class="fa-solid fa-clock"></i>
-                      </span>
-                      <span> Dec 01.2024 </span>
-                    </p>
-                  </div>
-                  <div class="comment d-flex align-items-center gap-3">
-                    <p>
-                      <span class="me-1">3</span>
-                      <span>
-                        <i class="fa-solid fa-heart"></i>
-                      </span>
-                    </p>
-                    <p>
-                      <span class="me-1">4</span>
-                      <span>
-                        <i class="fa-solid fa-comment"></i>
-                      </span>
-                    </p>
-                  </div>
+          <div class="col-12 col-xl-6">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="image">
+                  <img
+                    src="assets/imgs/about.jpg"
+                    alt="about"
+                    loading="lazy"
+                    class="w-100"
+                  />
                 </div>
               </div>
-              <div class="new-body">
-                <h4 class="mb-4">Save The Topic Forests</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectur adip sed eiusmod amet
-                  consectur adip sed eiusmod tempor.
-                </p>
-              </div>
-              <div class="new-footer">
-                <a href="#" class="fw-bold">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="new mt-5">
-              <div class="new-header position-relative">
-                <img
-                  src="assets/imgs/about.jpg"
-                  alt="new"
-                  loading="lazy"
-                  class="w-100"
-                />
-                <div
-                  class="info d-flex align-items-center justify-content-between"
-                >
-                  <div class="date">
-                    <p>
-                      <span class="me-1">
-                        <i class="fa-solid fa-clock"></i>
-                      </span>
-                      <span> Dec 01.2024 </span>
-                    </p>
-                  </div>
-                  <div class="comment d-flex align-items-center gap-3">
-                    <p>
-                      <span class="me-1">3</span>
-                      <span>
-                        <i class="fa-solid fa-heart"></i>
-                      </span>
-                    </p>
-                    <p>
-                      <span class="me-1">4</span>
-                      <span>
-                        <i class="fa-solid fa-comment"></i>
-                      </span>
-                    </p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="image">
+                  <img
+                    src="assets/imgs/about.jpg"
+                    alt="about"
+                    loading="lazy"
+                    class="w-100"
+                  />
                 </div>
               </div>
-              <div class="new-body">
-                <h4 class="mb-4">Save The Topic Forests</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectur adip sed eiusmod amet
-                  consectur adip sed eiusmod tempor.
-                </p>
-              </div>
-              <div class="new-footer">
-                <a href="#" class="fw-bold">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="new mt-5">
-              <div class="new-header position-relative">
-                <img
-                  src="assets/imgs/about.jpg"
-                  alt="new"
-                  loading="lazy"
-                  class="w-100"
-                />
-                <div
-                  class="info d-flex align-items-center justify-content-between"
-                >
-                  <div class="date">
-                    <p>
-                      <span class="me-1">
-                        <i class="fa-solid fa-clock"></i>
-                      </span>
-                      <span> Dec 01.2024 </span>
-                    </p>
-                  </div>
-                  <div class="comment d-flex align-items-center gap-3">
-                    <p>
-                      <span class="me-1">3</span>
-                      <span>
-                        <i class="fa-solid fa-heart"></i>
-                      </span>
-                    </p>
-                    <p>
-                      <span class="me-1">4</span>
-                      <span>
-                        <i class="fa-solid fa-comment"></i>
-                      </span>
-                    </p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="image">
+                  <img
+                    src="assets/imgs/about.jpg"
+                    alt="about"
+                    loading="lazy"
+                    class="w-100"
+                  />
                 </div>
               </div>
-              <div class="new-body">
-                <h4 class="mb-4">Save The Topic Forests</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectur adip sed eiusmod amet
-                  consectur adip sed eiusmod tempor.
-                </p>
-              </div>
-              <div class="new-footer">
-                <a href="#" class="fw-bold">Read More</a>
+              <div class="col-lg-6">
+                <div class="image">
+                  <img
+                    src="assets/imgs/about.jpg"
+                    alt="about"
+                    loading="lazy"
+                    class="w-100"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -615,9 +471,7 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>

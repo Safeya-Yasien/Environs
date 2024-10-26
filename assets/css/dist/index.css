@@ -27,13 +27,21 @@ header {
 }
 header .top-bar {
   background-color: transparent;
+  background-color: #000000;
 }
 header .bottom-bar {
   box-shadow: 0 0 10px;
   padding-right: 0.5rem;
+  background-color: transparent;
+  background-color: black;
+  border-top: 1px solid #e4312b;
+}
+header .bottom-bar.white-background {
+  box-shadow: none;
 }
 header .bottom-bar .navbar-brand .logo-img {
   width: 100%;
+  height: 60px;
 }
 @media (max-width: 767px) {
   header .bottom-bar .navbar-brand .logo-img {
@@ -43,10 +51,13 @@ header .bottom-bar .navbar-brand .logo-img {
 header .bottom-bar .navbar-links .navbar-link {
   color: #00ff7b !important;
 }
-header .bottom-bar .login-btn:hover {
+header .bottom-bar .navbar-links .navbar-link.active {
+  color: #e4312b;
+}
+header .bottom-bar .navbar-links .login-btn:hover {
   background-color: #000000;
 }
-header .bottom-bar .login-btn a {
+header .bottom-bar .navbar-links .login-btn a {
   color: #e4312b;
 }
 
